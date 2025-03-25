@@ -82,3 +82,14 @@ After removing missing values, we keep 26109 rows of the 32,346 rows.
 
 ## Check correlation between Time Progression and NP3TOT
 -0.09 indicates that there is a very weak negative correlation, almost no relationship. As time moves on, the NP3TOT value slightly decreases.
+
+## Autocorrelation NP3TOT (time element) and EXAMDT
+Lag 1 is always 1, since it represents the correlation of the series with itself. For the other lags, the values are very small, close to 0. This suggests that there is little to no significant correlation between the NP3TOT values at different time points. In other words, the progression scores do not exhibit strong temporal dependency or patterns over time. The values clearly fluctuate around 0, with no consistent increase or decrease. This indicates that the progression scores are likely independent or weakly dependent over time.
+
+### Expectation
+I did not expect the autocorrelation to be this low. PD progression is typically expected to worsen over time. But, the low autocorrelation values in your analysis suggest that the NP3TOT scores in your dataset may not exhibit a clear temporal dependency.
+
+This could be due to **Irregular Sampling Invervals**, since the EXAMDT are likely not evenly spaced. A solution can be to resample the data to regular intervals, like monthly, and aggregate the NP3TOT scores. 
+
+## Autocorrelation on resampled NP3TOT (monthly)
+As expected, the autocorrelation at lag 0 is always 1.0, representing the series’ correlation with itself. Autocorrelation values gradually decrease with increasing lag, indicating that NP3TOT scores have short-term dependence that weakens over time. Autocorrelations for initial lags (up to lag 10) are above the 95% confidence interval (blue shaded area), signifying statistically significant short-term correlation. Beyond approximately lag 10–15, autocorrelations approach zero and fluctuate randomly within the confidence interval, suggesting weak or negligible long-term dependence.
