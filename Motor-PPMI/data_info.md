@@ -91,5 +91,12 @@ I did not expect the autocorrelation to be this low. PD progression is typically
 
 This could be due to **Irregular Sampling Invervals**, since the EXAMDT are likely not evenly spaced. A solution can be to resample the data to regular intervals, like monthly, and aggregate the NP3TOT scores. 
 
-## Autocorrelation on resampled NP3TOT (monthly)
-As expected, the autocorrelation at lag 0 is always 1.0, representing the series’ correlation with itself. Autocorrelation values gradually decrease with increasing lag, indicating that NP3TOT scores have short-term dependence that weakens over time. Autocorrelations for initial lags (up to lag 10) are above the 95% confidence interval (blue shaded area), signifying statistically significant short-term correlation. Beyond approximately lag 10–15, autocorrelations approach zero and fluctuate randomly within the confidence interval, suggesting weak or negligible long-term dependence.
+## Autocorrelation on NP3TOT
+Looking at how a patient's PD motor score at one visit relates to their scores from previous visits. 
+
+A patient's score is **most strongly related to their score from the immediately preceding visit**. If their score was a bit higher last time, it's likely to be a bit higher this time too (and vice-versa). But, this connection gets **weaker the further back you look**. The score from 2 visits ago is less related than the score from 1 visit ago, meaning that old scores don't predict much in a direct sense. After about 5-7 visits have passed, knowing what the score was back then doesn't really tell you much about the score today, on average. For visits really far back (8 or more), there's a very slight tendency for the relationship to flip (weak negative correlation). Maybe if a score was unusually high way back then, it's slightly more likely to be lower now. But this effect is very weak and might not be practically important or could just be noise in the average. But that is just guessing!
+
+In short:
+**Recent scores matter**; what happened last visits gives you a clue about this visit. 
+
+**This "clue" fades pretty fast** over a few visits. Meaning that sources from **a long time ago aren't very useful** for predicting today's score. 
