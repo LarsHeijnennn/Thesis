@@ -6,15 +6,15 @@ This repository contains two Jupyter notebooks for the analysis and modeling of 
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
-- [Notebooks Overview](#notebooks-overview)
-  - [1. EDA_and_timeseries.ipynb](#1-eda_and_timeseriesipynb)
-  - [2. ML.ipynb](#2-mlipynb)
-- [Data Source](#data-source)
-- [Dependencies](#dependencies)
-- [Setup & Usage](#setup--usage)
-- [Reproducibility](#reproducibility)
-- [Notes](#notes)
+  - [Project Structure](#project-structure)
+  - [Notebooks Overview](#notebooks-overview)
+    - [1. EDA_and_timeseries.ipynb](#1-eda_and_timeseriesipynb)
+    - [2. ML.ipynb](#2-mlipynb)
+  - [Data Source](#data-source)
+  - [Dependencies](#dependencies)
+  - [Setup & Usage](#setup--usage)
+  - [Reproducibility](#reproducibility)
+  - [Notes](#notes)
 
 ---
 
@@ -35,33 +35,33 @@ Final/
 ### 1. EDA_and_timeseries.ipynb
 
 **Purpose:**  
-- Load and inspect the MDS-UPDRS Part III dataset.
-- Clean and preprocess data (handle missing values, outliers, date parsing).
-- Explore data distributions, correlations, and patient visit patterns.
-- Visualize temporal trends in NP3TOT scores, including by medication state (`PDSTATE`).
+  - Load and inspect the MDS-UPDRS Part III dataset.
+  - Clean and preprocess data (handle missing values, outliers, date parsing).
+  - Explore data distributions, correlations, and patient visit patterns.
+  - Visualize temporal trends in NP3TOT scores, including by medication state (`PDSTATE`).
 
 **Key Steps:**  
-- Data loading and initial inspection.
-- Data cleaning (date conversion, missing value handling, outlier removal).
-- Exploratory analysis (distributions, correlations, visit statistics).
-- Visualization (distributions, heatmaps, time trends).
+  - Data loading and initial inspection.
+  - Data cleaning (date conversion, missing value handling, outlier removal).
+  - Exploratory analysis (distributions, correlations, visit statistics).
+  - Visualization (distributions, heatmaps, time trends).
 
 ---
 
 ### 2. ML.ipynb
 
 **Purpose:**  
-- Preprocess and engineer features for machine learning.
-- Train and evaluate regression models to predict NP3TOT at the next patient visit.
-- Perform hyperparameter tuning and model comparison.
+  - Preprocess and engineer features for machine learning.
+  - Train and evaluate regression models to predict NP3TOT at the next patient visit.
+  - Perform hyperparameter tuning and model comparison.
 
 **Key Steps:**  
-- Data cleaning and preprocessing (as above).
-- Feature engineering (lag features, time deltas, target shifting).
-- Model training (Random Forest, XGBoost, MLP Regressor).
-- Hyperparameter tuning (GridSearchCV with GroupKFold).
-- Evaluation (MAE, MSE, R², visualizations).
-- Saving results and best parameters.
+  - Data cleaning and preprocessing (as above).
+  - Feature engineering (lag features, time deltas, target shifting).
+  - Model training (Random Forest, XGBoost, MLP Regressor).
+  - Hyperparameter tuning (GridSearchCV with GroupKFold).
+  - Evaluation (MAE, MSE, R², visualizations).
+  - Saving results and best parameters.
 
 ---
 
@@ -73,7 +73,7 @@ If your dataset is elsewhere, update the file path in the notebooks accordingly.
 ---
 
 **Python Version:**  
-- Python 3.8 or higher recommended
+  - Python 3.8 or higher recommended
 
 **Required Packages:**  
 | Package                   | Version   |
@@ -182,18 +182,18 @@ matplotlib-inline mdurl missingno mistune ml_dtypes mlxtend namex narwhals nbcli
 3. **Ensure the dataset is available** at the specified path, or update the file path in the notebooks.
 
 4. **Open and run the notebooks:**
-- EDA_and_timeseries.ipynb for data exploration and visualization.
-- ML.ipynb for machine learning modeling and evaluation.
+  - EDA_and_timeseries.ipynb for data exploration and visualization.
+  - ML.ipynb for machine learning modeling and evaluation.
 
 ## Reproducibility
 
-- The notebooks are designed to be run top-to-bottom, cell by cell.
-- For consistent results, use the same Python and package versions as listed in the output of `!pip list` in `ML.ipynb`.
-- Random seeds are set where applicable for reproducibility of model results.
+  - The notebooks are designed to be run top-to-bottom, cell by cell.
+  - For consistent results, use the same Python and package versions as listed in the output of `!pip list` in `ML.ipynb`.
+  - Random seeds are set where applicable for reproducibility of model results.
 
 ## Notes
 
-- The dataset is not included in this repository due to privacy or size constraints.
-- Update file paths in the notebooks if your directory structure differs.
-- Results (e.g., best hyperparameters, model performance) are saved in the `results/` directory.
-- For any issues or questions, please refer to the comments in the notebooks or open an issue.
+  - The dataset is not included in this repository due to privacy or size constraints.
+  - Update file paths in the notebooks if your directory structure differs.
+  - Results (e.g., best hyperparameters, model performance) are saved in the `results/` directory.
+  - For any issues or questions, please refer to the comments in the notebooks or open an issue.
