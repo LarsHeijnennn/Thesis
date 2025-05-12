@@ -1,0 +1,4 @@
+Model,n_estimators,max_depth,min_samples_leaf,learning_rate,hidden_layer_sizes,learning_rate_init
+Random Forest,300.0,10.0,5.0,,,
+XGBoost,300.0,4.0,,0.05,,
+MLP Regressor,,,,,"(50,)",0.001
