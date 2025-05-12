@@ -14,4 +14,4 @@ __pycache__/
 .env
 
 # Ignore the data folder
-data/
+archived/data/
