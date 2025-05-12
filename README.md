@@ -19,6 +19,7 @@ This repository contains two Jupyter notebooks for the analysis and modeling of 
 ---
 
 ## Project Structure
+```
 Final/
 ├── EDA_and_timeseries.ipynb         # Exploratory Data Analysis & Time Series Exploration
 ├── ML.ipynb                         # Machine Learning Modeling & Evaluation
@@ -26,7 +27,7 @@ Final/
 └── results/
     ├── optimal_parameters.csv       # Saved best model hyperparameters
     └── ...                          # Other result files
-
+```
 
 
 ## Notebooks Overview
