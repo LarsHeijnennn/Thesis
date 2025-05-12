@@ -20,12 +20,12 @@ This repository contains two Jupyter notebooks for the analysis and modeling of 
 
 ## Project Structure
 Final/
-├── EDA_and_timeseries.ipynb # Exploratory Data Analysis & Time Series Exploration
-├── ML.ipynb # Machine Learning Modeling & Evaluation
+├── EDA_and_timeseries.ipynb         # Exploratory Data Analysis & Time Series Exploration
+├── ML.ipynb                         # Machine Learning Modeling & Evaluation
 ├── MDS-UPDRS_Part_III_21Mar2025.csv # Main dataset (not included in repo due to DUA)
 └── results/
-  └── optimal_parameters.csv # Saved best model hyperparameters
-  └── ... # Other result files
+    ├── optimal_parameters.csv       # Saved best model hyperparameters
+    └── ...                          # Other result files
 
 
 
