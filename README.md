@@ -161,14 +161,15 @@ If your dataset is elsewhere, update the file path in the notebooks accordingly.
 | nbformat                  | 5.10.4    |
 
 Install all dependencies with:
-pip install absl-py anyio appnope argon2-cffi argon2-cffi-bindings arrow asttokens astunparse async-lru attrs \
-babel beautifulsoup4 bleach certifi cffi charset-normalizer cloudpickle comm contourpy cycler debugpy decorator \
-defusedxml executing factor_analyzer fastjsonschema flatbuffers fonttools fqdn gast google-pasta grpcio h11 h5py \
-httpcore httpx idna imbalanced-learn ipykernel ipython ipython_pygments_lexers ipywidgets isoduration jedi Jinja2 \
-joblib json5 jsonpointer jsonschema jsonschema-specifications jupyter jupyter_client jupyter-console jupyter_core \
-jupyter-events jupyter-lsp jupyter_server jupyter_server_terminals jupyterlab jupyterlab_pygments jupyterlab_server \
-jupyterlab_widgets keras kiwisolver libclang lightgbm llvmlite Markdown markdown-it-py MarkupSafe matplotlib \
-matplotlib-inline mdurl missingno mistune ml_dtypes mlxtend namex narwhals nbclient nbconvert nbformat
+pip install \
+  absl-py anyio appnope argon2-cffi argon2-cffi-bindings arrow asttokens astunparse async-lru attrs \
+  babel beautifulsoup4 bleach certifi cffi charset-normalizer cloudpickle comm contourpy cycler debugpy decorator \
+  defusedxml executing factor_analyzer fastjsonschema flatbuffers fonttools fqdn gast google-pasta grpcio h11 h5py \
+  httpcore httpx idna imbalanced-learn ipykernel ipython ipython_pygments_lexers ipywidgets isoduration jedi Jinja2 \
+  joblib json5 jsonpointer jsonschema jsonschema-specifications jupyter jupyter_client jupyter-console jupyter_core \
+  jupyter-events jupyter-lsp jupyter_server jupyter_server_terminals jupyterlab jupyterlab_pygments jupyterlab_server \
+  jupyterlab_widgets keras kiwisolver libclang lightgbm llvmlite Markdown markdown-it-py MarkupSafe matplotlib \
+  matplotlib-inline mdurl missingno mistune ml_dtypes mlxtend namex narwhals nbclient nbconvert nbformat
 
 
 ## Setup & Usage
