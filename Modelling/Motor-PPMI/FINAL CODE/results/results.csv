@@ -1,5 +1,0 @@
-Model,MAE,RMSE,R-squared
-Random Forest,5.83,8.08,"0,721"
-XGBoost,5.774,7.992,"0,728"
-MLP Regressor,5.883,8.109,"0,720"
-Linear Regression,5.825,7.956,"0,730"
